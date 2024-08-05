@@ -40,7 +40,7 @@ export const CreateRecipe = () => {
     event.preventDefault();
     try {
       await axios.post(
-        "http://localhost:3001/recipes",
+        "https://mern-recipe-app-wmu9.onrender.com/recipes",
         { ...recipe },
         {
           headers: { authorization: cookies.access_token },
